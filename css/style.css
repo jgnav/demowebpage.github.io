@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>News Web Page</title>
+</head>
+<body>
+    <header>
+        <h1>News Web Page</h1>
+        <!-- Add navigation links here -->
+    </header>
+
+    <section class="main-content">
+        <!-- Display latest news articles here -->
+        {% for article in articles %}
+            <div class="article">
+                <h2>{{ article.title }}</h2>
+                <p>{{ article.content }}</p>
+            </div>
+        {% endfor %}
+    </section>
+
+    <footer>
+        <p>&copy; 2023 News Web Page</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
