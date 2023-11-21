@@ -6,8 +6,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    border-bottom: 1px solid #000; /* Thin black line as a separator */
+    color: #000; /* Text color */
     text-align: center;
     padding: 1em;
 }
@@ -21,6 +21,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #000; /* Thin black line as a separator */
 }
 
 nav li {
@@ -29,7 +30,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000; /* Text color */
 }
 
 .main-content {
@@ -42,7 +43,7 @@ nav a {
 }
 
 .article {
-    border: 1px solid #ddd;
+    border: 1px solid #000; /* Thin black border around each article */
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -54,8 +55,8 @@ nav a {
 }
 
 .footer {
-    background-color: #333;
-    color: #fff;
+    border-top: 1px solid #000; /* Thin black line as a separator */
+    color: #000; /* Text color */
     text-align: center;
     padding: 1em;
 }
