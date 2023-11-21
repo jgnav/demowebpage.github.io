@@ -11,15 +11,23 @@
 <body>
     <header>
         <h1>News Web Page</h1>
-        <!-- Add navigation links here -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Technology</a></li>
+                <!-- Add more sections as needed -->
+            </ul>
+        </nav>
     </header>
 
     <section class="main-content">
-        <!-- Display latest news articles here -->
+        <!-- Display news articles in a grid -->
         {% for article in articles %}
             <div class="article">
+                <img src="images/{{ article.image }}" alt="{{ article.title }}">
                 <h2>{{ article.title }}</h2>
-                <p>{{ article.content }}</p>
+                <p>{{ article.description }}</p>
             </div>
         {% endfor %}
     </section>
